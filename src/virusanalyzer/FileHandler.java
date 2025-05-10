@@ -14,7 +14,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author thejan
+ * @author EL-ROUGUI
  */
 public class FileHandler {
     
