@@ -1,35 +1,29 @@
-=====================
-SIMPLE VIRUS DETECTOR
-=====================
+# SimpleVirusDetector-RL
 
-Find the source code of the project in "src" folder.
+Scanner de virus en Java amélioré avec un mode adaptatif basé sur l'apprentissage par renforcement (ε-greedy).  
+Le programme permet de détecter des fichiers malveillants à partir de leurs empreintes MD5, soit un par un, soit en scannant un dossier entier.
 
-Open in NetBeans to run the project from IDE.
+---
 
+## 📁 Structure du projet
 
-To run the project :
---------------------
+- `src/virusanalyzer/` : contient le code source (Java)
+- `virusDef.txt` : définitions de virus sous forme de hash MD5 (1000 lignes)
+- `dist/VirusAnalyzer.jar` : version exécutable packagée
 
-1) Go to "dist" folder in terminal.
-2) Execute command : java -jar "VirusAnalyzer.jar" 
-3) Select the file you want scan for virus, from the file chooser window.
-4) Program will detect whether the file contains a virus or not, based on the
-   md5 hash of the file's byte code and the provided virus definitions.
+---
 
+## ▶️ Exécution du projet
 
-NOTE :
-======
+### Depuis l'IDE (Eclipse ou NetBeans)
 
-*) "virusDef.txt" in "dist" folder contains 1000 md5 hashes of viruses and 
-   their names and virus types.
+1. Ouvrir le projet depuis l'IDE.
+2. Exécuter `VirusAnalyzer.java` (classe principale).
+3. Choisir un fichier ou un dossier à scanner.
 
-   Source : https://virusshare.com/hashes.4n6
+### Depuis le terminal
 
-*) EICAR (European Institute for Computer Antivirus Research) Standard Anti-Virus Test File
-   can be downloaded from,
-
-	https://www.ikarussecurity.com/fileadmin/user_upload/testviren/eicar_com.zip
-  
-   and can be tested on this virus detector (choose the zip file as file to detect).
-
-
+1. Ouvre un terminal et rends-toi dans le dossier `dist`.
+2. Lance :
+   ```bash
+   java -jar VirusAnalyzer.jar
